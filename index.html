@@ -1,123 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Crypto Market Dashboard – BTC, BNB, BTC1!</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Crypto Dashboard – BTC, BNB, BTC1!</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    h1, h2, h3 { color: #333; }
+    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
+    h1, h2 { color: #222; }
     a { color: #1e88e5; text-decoration: none; }
-    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
-    th { background-color: #f2f2f2; }
-    pre, code { background: #f8f8f8; padding: 0.3rem; border-radius: 4px; }
+    ul { padding-left: 1.2rem; }
   </style>
 </head>
 <body>
-  <h1>🧠 Crypto Market Dashboard – BTC, BNB, BTC1!</h1>
 
-  <h2>📦 1. BTCUSDT Market Data</h2>
-  <p>Live data from your GitHub-hosted CSV:</p>
-  <table id="btcTable">
-    <thead><tr><th>Timestamp</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th></tr></thead>
-    <tbody></tbody>
-  </table>
+  <h1>🧠 My Crypto Dashboard – BTC, BNB, BTC1!</h1>
 
-  <h2>📰 2. BTC News (CryptoPanic)</h2>
-  <ul id="newsList">Loading news...</ul>
-
-  <h2>💬 3. Social Sentiment</h2>
-<ul>
-  <li><a href="https://lunarcrush.com/coins/btc/bitcoin" target="_blank">LunarCrush – BTC</a></li>
-  <li><a href="https://lunarcrush.com/coins/bnb/binance-coin" target="_blank">LunarCrush – BNB</a></li>
-  <li><a href="https://app.santiment.net/projects/bitcoin" target="_blank">Santiment – BTC</a></li>
-  <li><a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank">CMC Community – BTC</a></li>
-</ul>
-
-
-  <h2>🧠 4. Project Info</h2>
+  <h2>📰 1. News Feeds</h2>
   <ul>
-    <li><a href="https://messari.io/asset/bitcoin" target="_blank">Messari – BTC</a></li>
-    <li><a href="https://messari.io/asset/bnb" target="_blank">Messari – BNB</a></li>
-    <li><a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank">CoinMarketCap – BTC</a></li>
-    <li><a href="https://coinmarketcap.com/currencies/bnb/" target="_blank">CoinMarketCap – BNB</a></li>
+    <li><a href="https://cryptopanic.com/news/btc/" target="_blank">CryptoPanic – BTC</a></li>
+    <li><a href="https://cryptopanic.com/news/bnb/" target="_blank">CryptoPanic – BNB</a></li>
+    <li><a href="https://www.coindesk.com/tag/bitcoin-futures/" target="_blank">CoinDesk – Bitcoin Futures (BTC1!)</a></li>
+    <li><a href="https://cointelegraph.com/tags/bitcoin" target="_blank">Cointelegraph – BTC News</a></li>
   </ul>
 
-  <h2>🔗 5. On-Chain Metrics</h2>
+  <h2>💬 2. Social Sentiment</h2>
+  <ul>
+    <li><a href="https://lunarcrush.com/coins/btc/bitcoin" target="_blank">LunarCrush – BTC</a></li>
+    <li><a href="https://lunarcrush.com/coins/bnb/binance-coin" target="_blank">LunarCrush – BNB</a></li>
+    <li><a href="https://app.santiment.net/projects/bitcoin" target="_blank">Santiment – BTC</a></li>
+    <li><a href="https://app.santiment.net/projects/bnb" target="_blank">Santiment – BNB</a></li>
+  </ul>
+
+  <h2>🧠 3. Fundamental Info</h2>
+  <ul>
+    <li><a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank">CoinMarketCap – BTC</a></li>
+    <li><a href="https://coinmarketcap.com/currencies/bnb/" target="_blank">CoinMarketCap – BNB</a></li>
+    <li><a href="https://messari.io/asset/bitcoin" target="_blank">Messari – BTC</a></li>
+    <li><a href="https://messari.io/asset/bnb" target="_blank">Messari – BNB</a></li>
+  </ul>
+
+  <h2>🔗 4. On-Chain Metrics</h2>
   <ul>
     <li><a href="https://cryptoquant.com/asset/btc/overview" target="_blank">CryptoQuant – BTC</a></li>
     <li><a href="https://cryptoquant.com/asset/bnb/overview" target="_blank">CryptoQuant – BNB</a></li>
     <li><a href="https://studio.glassnode.com/metrics?a=BTC&m=price" target="_blank">Glassnode Free – BTC</a></li>
-    <li><a href="https://www.lookintobitcoin.com/charts/" target="_blank">LookIntoBitcoin</a></li>
+    <li><a href="https://www.lookintobitcoin.com/charts/" target="_blank">LookIntoBitcoin – Charts</a></li>
   </ul>
 
-  <h2>🧠 6. Notes & Alerts</h2>
-  <ul>
-    <li>🔸 Rising exchange inflows → possible sell pressure</li>
-    <li>🔹 BTC.D down + USDT.D up → watch out for dump</li>
-    <li>🟣 Weekly close below 25k → major risk</li>
-  </ul>
-
-  <h2>📅 7. Important Events</h2>
-  <table>
-    <tr><th>Date</th><th>Event</th><th>Details</th></tr>
-    <tr><td>Aug 15, 2025</td><td>FOMC Meeting</td><td>U.S. interest rate decision</td></tr>
-    <tr><td>Oct 1, 2025</td><td>Bitcoin Halving (est.)</td><td>Block reward halved</td></tr>
-    <tr><td>Every Tuesday</td><td>BNB Burn Report</td><td>Binance update</td></tr>
-    <tr><td>Weekly</td><td>BTC1! Futures Gap</td><td><a href="https://www.tradingview.com/symbols/CME-BTC1!/" target="_blank">View Chart</a></td></tr>
-  </table>
-
-  <h2>📉 8. BTC Futures – BTC1!</h2>
-  <p><a href="https://www.tradingview.com/symbols/CME-BTC1!/" target="_blank">BTC1! on TradingView</a></p>
-
-  <script>
-    // Replace this with your actual raw GitHub link to BTCUSDT.csv
-    const CSV_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/btcusdt.csv";
-
-    fetch(CSV_URL)
-      .then(res => res.text())
-      .then(text => {
-        const rows = text.trim().split("\\n").slice(0, 10);
-        const tbody = document.querySelector("#btcTable tbody");
-        rows.slice(1).forEach(row => {
-          const cols = row.split(",");
-          const tr = document.createElement("tr");
-          cols.forEach(col => {
-            const td = document.createElement("td");
-            td.textContent = col;
-            tr.appendChild(td);
-          });
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(() => {
-        document.querySelector("#btcTable").innerHTML += "<tr><td colspan='6'>Failed to load CSV</td></tr>";
-      });
-
-    // BTC News via RSS2JSON API proxy
-    const RSS_URL = "https://api.rss2json.com/v1/api.json?rss_url=https://cryptopanic.com/news/rss";
-
-    fetch(RSS_URL)
-      .then(res => res.json())
-      .then(data => {
-        const ul = document.getElementById("newsList");
-        ul.innerHTML = "";
-        data.items.slice(0, 8).forEach(item => {
-          const li = document.createElement("li");
-          li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-          ul.appendChild(li);
-        });
-      })
-      .catch(() => {
-        document.getElementById("newsList").innerText = "Failed to load news.";
-      });
-  </script>
 </body>
 </html>
